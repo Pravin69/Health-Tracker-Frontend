@@ -24,19 +24,18 @@ const Checklist = ({ goals, onCheck, onCheckAll }) => {
         />
       </div>
 
-      {goals &&
-        goals.map((goal, index) => (
-          <ReusableComp
-            key={index}
-            id={goal.id}
-            checked={goal.checked}
-            onCheck={onCheck}
-            taskName={goal.text}
-            customColor={goal.color}
-          >
-            {goal.icon}
-          </ReusableComp>
-        ))}
+      {goals.map((goal, index) => (
+        <ReusableComp
+          key={index + 1}
+          id={goal.id}
+          checked={goal.checked}
+          onCheck={onCheck}
+          taskName={goal.text}
+          customColor={goal.customColor}
+        >
+          {goal.icon}
+        </ReusableComp>
+      ))}
 
       <div
         className={`bg-[#D15439] flex items-center w-76 h-14 rounded-full mt-4 px-2 ${

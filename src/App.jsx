@@ -9,6 +9,7 @@ function App() {
       id: 1,
       text: "Workout for 20 mins",
       checked: false,
+      customColor: "#9E4CB8",
       icon: (
         <svg
           width="30px"
@@ -48,12 +49,12 @@ function App() {
           </g>
         </svg>
       ),
-      color: "#9E4CB8",
     },
     {
       id: 2,
       text: "Read book for 15 mins",
       checked: false,
+      customColor: "#D15439",
       icon: (
         <svg
           width="30px"
@@ -76,12 +77,12 @@ function App() {
           </g>
         </svg>
       ),
-      color: "#D15439",
     },
     {
       id: 3,
       text: "30 mins walk",
       checked: false,
+      customColor: "#81B47D",
       icon: (
         <svg
           width="30px"
@@ -109,12 +110,12 @@ function App() {
           </g>
         </svg>
       ),
-      color: "#81B47D",
     },
     {
       id: 4,
       text: "Sleep at 11 sharp",
       checked: false,
+      customColor: "#63A7A7",
       icon: (
         <svg
           width="30px"
@@ -144,12 +145,12 @@ function App() {
           </g>
         </svg>
       ),
-      color: "#63A7A7",
     },
     {
       id: 5,
       text: "Drink 3L water",
       checked: false,
+      customColor: "#5A92CB",
       icon: (
         <svg
           width="35px"
@@ -181,7 +182,6 @@ function App() {
           </g>
         </svg>
       ),
-      color: "#5A92CB",
     },
   ]);
   const [progress, setProgress] = useState(0);
